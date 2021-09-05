@@ -10,9 +10,6 @@ window.addEventListener("keydown", function(event) {
 	if(event.code == "Space"){
 		start_btn_pressed();
 	}
-	else if(event.code == "KeyS"){
-		switch_page();	
-	}
 	else if(event.code == "KeyR"){
 		rese();	
 	}
@@ -25,19 +22,6 @@ window.onload = function() {
 	//set timer text to default time
     document.getElementById("timer_text").innerHTML = ("0" + min).slice(-2) + ":" + ("0" + sec).slice(-2);
 };
-
-function switch_page(){
-
-	var current_url = window.location.href;
-	console.log(current_url);
-	if(current_url.search("index.html") != -1){
-		window.location.href = './0830.html';
-	}
-	else{
-		window.location.href = './index.html';
-	}
-
-}
 
 
 function set_time(set_min, set_sec){
