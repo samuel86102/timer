@@ -1,3 +1,4 @@
 # timer
+## a simple web timer for anyone :D
 ![](screenshot.png)
-[https://ntnu.netlify.app/timer/](https://ntnu.netlify.app/timer/)
+[https://app.samuelast.net/timer](https://app.samuelast.net/timer)
