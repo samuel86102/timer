@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+	<head>
+			<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>計時器</title>
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+		<!-- Goolge Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+		<!-- Fontawesome -->
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+		<!-- Custom CSS  -->
+		<link rel="stylesheet" href="assets/css/style.css" >
+
+
+	</head>
+
+	<body>
+
+
+
+		<div class="container text-center mt-3">
+
+
+			<div class="m-5">
+				<p id="timer_text"></p>
+			</div>
+
+			<div id="toolbar" class="mb-3">
+
+				<button type="button" class="btn btn-dark" onclick="reset()">重置</button>
+
+				<button type="button" class="btn btn-dark" onclick="set_time(0, 30)">30秒</button>
+
+				<button type="button" class="btn btn-dark" onclick="set_time(1, 0)">1分</button>
+				<button type="button" class="btn btn-dark" onclick="set_time(2, 0)">2分</button>
+				<button type="button" class="btn btn-dark" onclick="set_time(3, 0)">3分</button>
+				<button type="button" class="btn btn-dark" onclick="set_time(8, 0)">8分</button>
+				<button type="button" class="btn btn-dark" onclick="set_time(9, 0)">9分</button>
+				<button type="button" class="btn btn-dark" onclick="set_time(10, 0)">10分</button>
+				<button type="button" class="btn btn-dark" onclick="set_time(20, 0)">20分</button>
+
+				<button type="button" class="btn btn-dark" onclick="set_time_bar_toggle()">自訂</button>
+			
+				<span id="set-time-bar">
+					<input type="number" class="input_box" id="min_input">
+					<input type="number" class="input_box" id="sec_input">
+					<button type="button" class="btn btn-dark" onclick="set_custom_time()">設置</button>
+				</span>
+
+			</div>
+
+			<button type="button" class="btn btn-danger" id="start_btn" onclick="start_btn_pressed()">開始</button>
+			<!-- <button type="button" class="btn btn-danger" id="toggle_btn" onclick="CT_toggle()">隱藏</button> -->
+
+		<div>
+
+
+		<script src="assets/js/script.js"></script>
+
+
+
+		<!-- Bootstrap Bundle with Popper -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+	</body>
+</html>

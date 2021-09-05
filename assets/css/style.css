@@ -1,0 +1,44 @@
+p {
+	text-align: center;
+	font-size: 250px;
+	margin-top: 0px;
+}
+
+body {
+
+	font-family: 'Roboto Condensed', 'Noto Sans TC',sans-serif;
+	background-color:#2f2f2f;
+	color:white;
+}
+
+img{
+	width:30%;
+}
+
+.input_box{
+
+	width:7%;
+
+}
+#toolbar{
+	opacity: 1;
+	transition: opacity 0.5s;
+}
+#toolbar.hide{
+	opacity: 0;
+}
+
+#set-time-bar{
+
+	display:none;
+}
+
+@media only screen and (max-width: 600px) {
+	p {
+
+		font-size:150px;
+	}
+
+}
+
+
